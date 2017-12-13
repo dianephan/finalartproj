@@ -1,0 +1,87 @@
+<!--//presentation.html-->
+
+<html>
+  <head>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.js"></script>
+      <script src="sketch.js"></script>
+      <script src="p5.min.js"></script>
+      <script src="p5.sound.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="../assignment6/css/style.css">
+  </head>
+  <body>   
+          <header>
+              <h1><a href="../assignment6/index.html">Back to Diane's Portfolio</a></h1>
+              <h1><a href="index.html">Back to Final Proposal </a></h1>
+
+              <h1>  
+                  The Shelter Tour Experience</h1>
+<h3>[Intro]</h3>
+	I decided to do what I really enjoyed from this quarter of Art22 and create a digital animated piece using entirely javascript. This piece tells a brief short story and displays some images that I think are aesthetically pleasing. 
+<br>
+<h3>[Background & Motivation]</h3>
+My biggest inspiration for this project, is of course, the Shelter Live Tour, which happened last year. This tour featured my two most favorite music producers in the world as they performed “Shelter”, also known as the song they collaborated on together. These two artists have inspired me through their artistic vision in terms of music, lights, and digital art as they have presented as their tour visuals. Thus, my ultimate goal of this project was to show everyone their beautiful stage setup, as I have recreated here on the screen. 
+<br>
+<br>
+One of my favorite projects that we have completed over this quarter was using HTML and CSS to display images. I already had some brief knowledge about HTML and CSS, however, I never learned how to incorporate images. That is why our last workshop about creating an image gallery was so fun for me. I wanted to continue doing that so I thought about doing a project that would allow me to use images from the web. With my love for my favorite concert experience and my interest of using pictures in my code, I decided to make another gallery. I also enjoy using code to create a picture, even though it may be very tedious and time consuming. Thus, I decided on creating a code generated digital animation to display some of the visuals they used during their performance, as well as screenshots from the animation to display the story of “Shelter”.
+<br>
+<h3>[Demo]</h3>
+My project is over 3 minutes long because I decided to make an animation to accompany one of the songs from the concert. 
+<br>
+<h3>[References]</h3>
+At first, I thought that I could reuse my workshop 7 code since it was the image gallery. However, I had a difficult time finding out how I could properly place my images in the designated box I made for the pictures. I realized that the code we learned for workshop 7 was exclusive to HTML only, thus it cannot be put onto a javascript piece. By reaching out to Echo, I was able to find a way to set an image to a variable in my javascript code. I had to create a global variable and load an image onto it within a preload function, then call it and specify the x and y coordinates that I want the picture to be positioned at inside the setup function. I looked at the template code for image uploading in the p5js references in order to understand this. 
+<br>
+<br>
+Similarly, I had to learn how to use the p5 sound library. We had a guest lecturer come in to introduce this concept to us one day. However, I figured out how to upload my own song with the help of p5js references for soundFiles. I had to create a global variable to hold the song, then upload the song under the preload function. I had to download some js files from the online library such as p5.min.js and p5.sound.min.js to render the audio file. Although I had been able to upload the song file, it did not appear on the screen or play. My curiosity led me to check out the console by pressing F12 and snooping around the features to find out where exactly the audio was being uploaded. I went under the “Network” tab while inspecting element and typed in the song title. I right clicked it and clicked “open in a new tab” to realize that I never displayed it in my HTML code, thus it never showed up on screen and played. Using “inspect element” on there, I viewed the HTML code of how to present the song on the screen and put it into my own HTML file. To my surprise, the song source file was displayed as a video file of an audio type, thus allowing the user to press play. I felt proud of myself because I learned this entirely through snooping the “inspect element” function to find the code. 
+<br>
+<h3>[Discuss]</h3>
+Besides learning how to use the p5 sound library and incorporate images into my javascript code, I learned how to properly plan out my projects. I also learned to be incredibly patient since my project was based on time. The project took me a lot longer than I anticipated because I had to use the frameRate and frameCount functions and listen to the song multiple times in order to properly time out the picture changes. For some reason, I underestimated how long 3 minutes would be, so I had to figure out when to repeat images, and when to add new images. I had to take note of the time intervals for each part of the song and break it down as much as possible. 
+<br>
+<br>
+If I had more time to complete this project, I would use a gif file to display the animation instead because it was not very time efficient to take screenshots of the video and crop it down and resize the dimensions so that it would be positioned appropriately. I would also like to fix the timing on the image transitions and just make the overall project look nicer. In addition, I would also like to make the lights more interactive with the user by mapping it to the mouse functions so that the user could feel like they are in control of the lights. As of now, everything is animated with the help of a bunch of if statements, and I thought that was very inefficient because it got very long really quick. The animation is hard coded based on the frameRate, however, I would like to see if there was a better way to display all my images and not have to write so many if statements. 
+    
+                  
+                  
+                  
+                  
+                  
+                  
+              </p>
+              
+    
+<div id ="footer">
+        <section id="navbar">
+               <h3>Navigation</h3>
+            <nav>
+            <a href="../workshop/index.html">Dream Catcher</a>   
+            <a href="../assignment1/index.html">Invitation to Moon Festival</a>
+            <a href="../workshop2/index.html">Angry Eyes</a>
+            <a href="../workshop3/index.html">Dream World</a>
+            <a href="../workshop3.1/index.html">Sunset</a>
+            <a href="../assignment2/index.html">Watercolors in the Sky</a>
+            <a href="../assignment3/index.html">Octopi</a>  
+            <a href="../assignment4/index.html">Candies and Scary Monster</a>
+            <a href="../workshop4/index.html">Dance Party</a>
+            <a href="../workshop4.2/index.html">Red Ball and Box</a>
+            <a href="../workshop5.1/index.html">Scary Halloween Picture</a>
+            <a href="../workshop5.2/index.html">Endless Rain</a>
+            <a href="../assignment5/index.html">Data Visualization</a>
+            <a href="../workshop7/index.html">Gallery</a>
+
+            </nav>               
+        </section>
+    </div>   
+      <center>
+          
+      <video controls autoplay name="media">
+      <source src="shelter.mp3" type="audio/mpeg">
+      </video>
+          
+          <br>
+      </center>
+ 
+    </header>
+      
+      
+      
+  </body>
+</html>
